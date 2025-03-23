@@ -1,0 +1,154 @@
+/* Reset and Full-Screen Setup */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #000, #1a1a1a), url('circuit-board-bg.jpg') repeat;
+    background-blend-mode: overlay;
+    color: #fff;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: right;
+    z-index: 10;
+}
+
+#connect-wallet {
+    background: #ffd700;
+    color: #000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    height: calc(100% - 100px); /* Adjust based on header/footer height */
+    margin-top: 50px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Profile Section */
+#profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username-container {
+    flex-grow: 1;
+}
+
+#verified-tick {
+    color: #00ff00;
+    margin-left: 5px;
+}
+
+#kyc-button {
+    background: #ffd700;
+    color: #000;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* News Section */
+#news video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Interactive Scroll Divs */
+.scroll-div {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    background: rgba(255, 215, 0, 0.2);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.scroll-div.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Pages (Swap and AI Trading) */
+.page {
+    padding: 20px;
+}
+
+.swap-container, .trading-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.swap-container input, .swap-container select {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#swap-button, .trading-container button {
+    background: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Bottom Navigation */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-btn {
+    background: #ffd700 !important;
+    color: #000 !important;
+    padding: 12px 30px;
+    font-weight: bold;
+}
