@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trading Mini App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <!-- Header with Connect Wallet -->
+    <header>
+        <button id="connect-wallet">Connect Wallet</button>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Profile Section -->
+        <section id="profile">
+            <img id="profile-photo" src="" alt="Profile Photo">
+            <div class="username-container">
+                <span id="username"></span>
+                <span id="verified-tick" style="display: none;">✔️</span>
+            </div>
+            <button id="kyc-button">Verify ID (KYC)</button>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="scroll-div">Latest News: Market trends update...</div>
+            <div class="scroll-div">Announcement: New features added!</div>
+            <div class="scroll-div">Event: Trading webinar tomorrow.</div>
+        </section>
+
+        <!-- Swap Page (Hidden by Default) -->
+        <section id="swap-page" class="page" style="display: none;">
+            <h2>Swap Tokens</h2>
+            <div class="swap-container">
+                <input type="text" placeholder="Enter amount to swap">
+                <select>
+                    <option>Token A</option>
+                    <option>Token B</option>
+                </select>
+                <button id="swap-button">Swap Now</button>
+            </div>
+        </section>
+
+        <!-- AI Trading Page (Hidden by Default) -->
+        <section id="ai-trading-page" class="page" style="display: none;">
+            <h2>AI Trading</h2>
+            <div class="trading-container">
+                <p>AI-driven trading insights coming soon!</p>
+                <button>Start Trading</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <footer>
+        <nav>
+            <button id="account-btn">Account</button>
+            <button id="ai-trading-btn" class="main-btn">AI Trading</button>
+            <button id="swap-btn">Swap</button>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
